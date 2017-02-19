@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Header.master" AutoEventWireup="true" CodeFile="HeadSub.master.cs" Inherits="HeadSub" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div>
+        <div style="text-align: right; margin-left: 40px">
+    
+            &nbsp;Time Now:
+            <asp:Label ID="lab_time" runat="server"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+    
+            <asp:Label ID="lab_name" runat="server" Text="Login or Register"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+    
+            <asp:Button ID="but_log" runat="server" Text="Login" onclick="but_log_Click" 
+                CausesValidation="False" />
+    
+    &nbsp;<asp:Button ID="but_reg" runat="server" Text="Register" 
+            onclick="but_reg_Click" CausesValidation="False" />
+            &nbsp;<asp:Button ID="but_logout" runat="server" onclick="but_logout_Click" 
+                Text="Logout" Visible="False" CausesValidation="False" />
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <p>
+                <br />
+            </p>
+        </asp:ContentPlaceHolder>
+    </div>
+    </asp:Content>
+
