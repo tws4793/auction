@@ -1,0 +1,1 @@
+Auction folder project directory for the MS8506 .NET Applications course in Singapore Polytechnic (SP).
